@@ -1,0 +1,13 @@
+##CREACION DE EJEMPLO## 
+##Explicacion como fui creando la base de datos i210_pruebas,sus tablas y relaciones##
+
+#CREATE DATABASE i210_pruebas;#
+#USE DATABASE i210_pruebas;#
+#CREATE TABLE continentes (id_continente INT AUTO_INCREMENT PRIMARY KEY,nombre VARCHAR(50) NOT NULL UNIQUE;# 
+#CREATE TABLE paises ( id_pais INT AUTO_INCREMENT PRIMARY KEY, nombre VARCHAR(60) NOT NULL UNIQUE,id_continente INT NOT NULL,FOREIGN KEY (id_continente) REFERENCES continentes(id_continente) ON DELETE RESTRICT ON UPDATE CASCADE);
+#CREATE TABLE personas (id_persona INT AUTO_INCREMENT PRIMARY KEY,nombre VARCHAR(50) NOT NULL,apellido VARCHAR(50) NOT NULL,dni VARCHAR(15) NOT NULL UNIQUE,fecha_nacimiento DATE,id_pais INT NOT NULL,FOREIGN KEY (id_pais) REFERENCES paises(id_pais) ON DELETE RESTRICT ON UPDATE CASCADE;
+*INSERTAMOS LOS DATOS EN CADA TABLA*
+
+#INSERT INTO continentes (nombre) VALUES ('América del Sur'),('Europa'),('Asia');#
+#INSERT INTO paises (nombre, id_continente) VALUES ('Argentina', 1),('Brasil', 1),('España', 2),('Japón', 3);
+#INSERT INTO personas (nombre, apellido, dni, fecha_nacimiento, id_pais) VALUES ('Juan', 'Pérez', '35123456', '1990-05-12', 1),('Ana', 'Bayonetta', '123456', '1998-08-24', 2),('Carlos', 'Olivera', '364578', '1985-11-02', 3),('Nana', 'Mizuki', '777666', '1993-02-15', 4);#
