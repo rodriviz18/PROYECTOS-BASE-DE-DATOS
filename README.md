@@ -1,2 +1,3 @@
-# PROYECTOS-BASE-DE-DATOS
-FUTUROS PROYECTOS DE BASE DE DATOS
+##PROYECTOS BASE DE DATOS##
+
+*Hola! bienvenido a mi repo! Voy a estar subiendo proyectos de base datos hechos con mysql*
